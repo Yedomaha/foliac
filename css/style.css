@@ -18,12 +18,13 @@
 	font-family: 'SlimJoe';
 	src: url(SlimJoe.otf);
 }
+
 body {
 	width: 100%;
 }
 
 .wrapper {
-	width: 99%;
+	width: 90%;
 	margin-left: auto;
 	margin-right: auto;
 }
@@ -173,7 +174,7 @@ li:nth-child(2n) {
 }
 
 .photos {
-	width: 94%;
+	width: 1140px;
 	margin-left: auto;
 	margin-right: auto;
 	word-spacing: -.36em;
