@@ -1,0 +1,123 @@
+<DOCTYPE! html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>foliac</title>
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<link rel="icon" href="favicon.png"/>
+	<link href="https://fonts.googleapis.com/css?family=Lato:400,700" rel="stylesheet">
+	<link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
+</head>
+<body>
+	<div class="header">
+		<div class="wrapper">
+			<div class="navigation">
+				<div class="logo disp"><img src="img/logo.png"></div>
+				<div class="menu disp">
+				<ul>
+					<li class="mgr"><a href="#">Accueil</a></li>
+					<li class="mgr">/</li>
+					<li class="mgr"><a href="#">Portfolio</a></li>
+					<li class="mgr">/</li>
+					<li class="mgr"><a href="#">About</a></li>
+					<li>/</li>
+					<li class="mgrn"><a href="#contact">Contact</a></li>
+				</ul>
+				</div>
+			</div>
+			<p class="header_text1">voici votre prochain portfolio</p>
+			<p class="header_text2">un template psd simple et gratuit</p>
+			<div class="knopka">mes travaux
+			</div>
+		</div>
+	</div>
+		<div class="content">
+			<div class="wrapper">
+				<div class="menu1">
+					<ul>
+						<li class="mgr1"><a href="#">Tous les projets</a></li>
+						<li class="mgr1"><a href="#">Webdesign</a></li>
+						<li class="mgr1"><a href="#">UI/UX design</a></li>
+						<li><a href="#">Illustration</a></li>
+						<li class="mgrn1"><a href="#">Motion design</a></li>
+					</ul>
+				</div>
+				<div class="photos">
+					<div class="ph photos1">
+						<div class="hovers1">
+							<img class="item1" src="img/item1.png">
+							<a class="hov1" href="#">Forest app<br><span class="aplication_style">aplication mobile</span></a>
+						</div>
+						<div class="hovers3">
+							<img class="item3" src="img/item3.png">
+							<a class="hov3" href="#">Forest app<br><span class="aplication_style">aplication mobile</span></a>
+						</div>
+					</div>
+					<div class="ph photos2">
+						<div class="hovers2">
+							<img class="item2" src="img/item2.png">
+							<a class="hov2" href="#">Forest app<br><span class="aplication_style">aplication mobile</span></a>
+						</div>
+						<div class="hovers4">
+							<img class="item4" src="img/item4.png">
+							<a class="hov4" href="#">Forest app<br><span class="aplication_style">aplication mobile</span></a>
+						</div>
+					</div>	
+				</div>	
+			</div>
+		</div>
+		<div class="mycontact">
+			<div class="wrapper">
+				<p class="mycont1">Michel Dupont<br><span class="mycont1_1">Webdesigner, illustrateur, auteur<span></p>
+				<p class="mycont2">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
+				<a class="mecont" href="#">me contacter</a>
+			</div>
+		</div>
+		<div class="form">
+			<div class="wrapper">
+				<form action="#">
+					<p class="form_mycont">me contacter</p>
+					<div class="input_wrapp">
+						<label class="in-11" for="in-1">
+							<img src="img/nom.png">
+							<input class="in-1" type="text" placeholder="Votre nom..." id="in-1">
+						</label>
+						<label class="in-12" for="in-2">
+							<img src="img/mail.png">
+							<input class="in-1" type="text" placeholder="Votre e-mail..." id="in-2">
+						</label>
+						<label class="in-13" for="in-3">
+							<img src="img/crayon.png">
+							<textarea class="in-2" id="in-3">Votre message...</textarea>
+						</label>
+						<input class="button" type="submit" value="envoyer">
+				    </div>
+				</form>
+			</div>
+		</div>
+		<div class="footer" id="contact">
+			<div class="wrapper">
+				<p class="sctext sc">Copyright © 2015 by beneggen - <a href="#">www.beneggen.fr</a></p>
+				<div class="sc social">
+					<ul class="seti">
+						<li class=" mgr twitter"><a href="#"><img class="img_href" src="img/t.png"></a></li>
+						<li class=" mgr linledin"><a href="#"><img class="img_href" src="img/li.png"></a></li>
+						<li class=" dribble"><a href="#"><img class="img_href" src="img/dr.png" width="49" height="55"></a></li>
+						<li class=" mgl behanse"><a href="#"><img class="img_href" src="img/be.png"></a></li>
+					</ul>
+				</div>
+			</div>	
+		</div>
+		<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js"></script>
+		<script type="text/javascript">
+ $(document).ready(function(){
+    $(".mgrn").on("click","a", function (event) {
+        event.preventDefault();
+        var id  = $(this).attr('href'),
+            top = $(id).offset().top;
+        $('body,html').animate({scrollTop: top}, 1500);
+    });
+});
+</script>
+</body>
+</html>
